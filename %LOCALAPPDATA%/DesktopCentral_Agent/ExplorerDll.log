@@ -1,0 +1,7 @@
+﻿Date	Time	Severity	PID	TID	Function	Message
+19-10-2025	10:13:11.663	 INFO	 21216	  4672	DllMain	"DLL_PROCESS_ATTACH Sun Apr 27 14:47:17 2025 11.4.2500.28"
+19-10-2025	10:13:11.665	 INFO	 21216	  7220	LateInitialization	"Intialization..."
+19-10-2025	10:13:11.666	 INFO	 21216	  7220	LateInitialization	"Exe = C:\Users\nirangal\AppData\Local\Programs\Git\usr\bin\sh.exe"
+19-10-2025	10:13:11.666	 INFO	 21216	  7220	LateInitialization	"IsExplorer = 0"
+19-10-2025	10:13:11.666	 INFO	 21216	  7220	Edlp::Path::InitializeExcludedPathPatterns	"Windows drive = C:"
+19-10-2025	10:13:11.667	 INFO	 21216	  7220	LateInitialization	"Intialization finished"
