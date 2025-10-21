@@ -19,3 +19,19 @@ export function toSlug(text: string): string {
     .replace(/[\s_]+/g, "-") // Replace spaces and underscores with hyphens
     .replace(/^-+|-+$/g, ""); // Remove leading/trailing hyphens
 }
+
+const CURRENCY_FORMATTER = new Intl.NumberFormat("en-us", {
+  currency: "USD",
+  style: "currency",
+  minimumFractionDigits: 2,
+});
+
+export function formatCurrency(amount: number) {
+  return CURRENCY_FORMATTER.format(amount);
+}
+
+const NUMBER_FORMATTER = new Intl.NumberFormat("en-us");
+
+export function formatNumber(amount: number) {
+  return NUMBER_FORMATTER.format(amount);
+}
