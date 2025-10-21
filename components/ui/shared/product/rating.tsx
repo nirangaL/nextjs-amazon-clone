@@ -4,10 +4,13 @@ import { Star } from "lucide-react";
 export default function Rating({ rating = 0, size = 6 }) {
   const fullStars = Math.floor(rating);
   const hasHalfStar = rating % 1 !== 0;
-  const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+  const emptyStars = 5 - Math.ceil(rating);
 
   return (
-    <div className="flex items-center">
+    <div
+      className="flex items-center"
+      aria-label={`Rating: ${rating} out of 5`}
+    >
       {[...Array(fullStars)].map((_, index) => (
         <Star key={index} size={size} className="text-yellow-500" />
       ))}
